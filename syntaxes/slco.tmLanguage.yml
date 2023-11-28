@@ -1,0 +1,48 @@
+$schema: https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json
+name: SLCO
+patterns:
+  - include: '#keywords'
+  - include: '#strings'
+  - include: '#operators'
+  - include: '#constants'
+  - include: '#storage'
+repository:
+  keywords:
+    patterns:
+      - name: keyword.control.slco
+        match: \b(from|to|do)\b
+      - name: keyword.model.slco
+        match: \b(model|actions|classes|objects|channels)\b
+      - name: keyword.class.slco
+        match: \b(ports|state machines)\b
+      - name: keyword.statemachine.slco
+        match: \b(variables|initial|states|transitions)\b
+      - name: keyword.channel.slco
+        match: \b(async|sync|between|send|receive|lossless|lossy)\b
+      - name: keyword.delay.slco
+        match: \b(after|ms)\b
+  strings:
+    name: string.quoted.double.slco
+    begin: '"'
+    end: '"'
+    patterns:
+      - name: constant.character.escape.slco
+        match: \\.
+  operators:
+    patterns:
+      - name: keyword.operator.slco
+        match: \b(or|xor|and|mod)\b
+      - name: keyword.operator.punc.slco
+        match: :=|==|<>|<=|>=|<|>|\+|-|\*|\/|%|\*\*
+  constants:
+    patterns:
+      - name: constant.numeric.slco
+        match: \b\d+\b
+      - name: constant.language.slco
+        match: \b(true|false)\b
+  storage:
+    patterns:
+      - name: storage.type.slco
+        match: \b(Integer|Boolean|Byte)\b
+scopeName: source.slco
+

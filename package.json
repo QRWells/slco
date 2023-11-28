@@ -1,0 +1,48 @@
+{
+  "name": "slco",
+  "displayName": "slco",
+  "description": "SLCO language support for Visual Studio Code",
+  "author": {
+    "name": "QRWells",
+    "email": "wang@ueda.info.waseda.ac.jp",
+    "url": "https://github.com/QRWells"
+  },
+  "publisher": "qr-ext",
+  "license": "MIT",
+  "keywords": [
+    "slco",
+    "highlighting"
+  ],
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "slco",
+        "aliases": [
+          "SLCO",
+          "slco"
+        ],
+        "extensions": [
+          "slco"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "slco",
+        "scopeName": "source.slco",
+        "path": "./syntaxes/slco.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
