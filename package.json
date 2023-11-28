@@ -9,6 +9,10 @@
   },
   "publisher": "qr-ext",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/QRWells/slco"
+  },
   "keywords": [
     "slco",
     "highlighting"

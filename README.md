@@ -14,4 +14,4 @@ Basic syntax highlighting for SLCO files.
 
 ## License
 
-This extension is licensed under the MIT License.
+This extension is licensed under the [MIT License](LICENSE).
